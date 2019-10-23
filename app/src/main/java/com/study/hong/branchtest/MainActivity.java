@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button onclick;
 
@@ -19,8 +19,13 @@ public class MainActivity extends Activity {
         onclick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-startActivity(new Intent(MainActivity.this,ActivitySecond.class));
+                startActivity(new Intent(MainActivity.this, ActivitySecond.class));
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
