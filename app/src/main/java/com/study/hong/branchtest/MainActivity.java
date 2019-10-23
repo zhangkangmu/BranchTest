@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        SKA.install(getApplication());
         onclick = findViewById(R.id.onclick);
         onclick.setOnClickListener(new View.OnClickListener() {
             @Override
