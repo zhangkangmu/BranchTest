@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
         onclick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-startActivity(new Intent(MainActivity.this,ActivitySecond.class));
+            startActivity(new Intent(MainActivity.this,ActivitySecond.class));
             }
         });
     }
